@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>iTunes Search</title>
+</head>
+
+<body class="bg-light">
+    <h1>Song Snippet Player</h1>
+    <div class="text-center">
+        <div class="jumbotron mx-auto bg-dark shadow-lg border-0" id="jumbo">
+            <img src="" id="playerImg" aria-label="Album artwork for currently playing song">
+            <hr class="my-4">
+            <audio controls src="" id="player" class="bg-transparent"></audio>
+        </div>
+            
+    </div>
+
+    <p>
+        <div class="searcharea text-center">
+        <div class="input-group shadow-sm">
+            <div class="input-group-prepend">
+                    <select id="filter" class="btn btn-outline-secondary dropdown-toggle" aria-label="Filter results">
+                        <option selected value="" class="dropdown-item">All Results</option>
+                        <option value="songTerm" class="dropdown-item">Songs</option>
+                        <option value="artistTerm" class="dropdown-item">Artists</option>
+                        <option value="albumTerm" class="dropdown-item">Albums</option>
+                    </select>
+                </div>
+            <input type="search" id="searchbar" class="form-control" placeholder="Search for songs..." aria-describedby="button-addon4" aria-label="Search for songs">
+                <div class="input-group-append" id="button-addon4">
+                    <button id="doSearch" class="btn btn-primary btn-outline-secondary text-white">Search</button>
+                </div>
+                
+        </div>
+        </div>
+
+              
+    </p>
+        <div class="spinner-border text-primary text-center" role="status" id="spinner">
+            <span class="sr-only">Loading...</span>
+          </div>
+        <div id="resultArea" class="results mx-auto" aria-label="Results of search">
+
+        </div>
+</body>

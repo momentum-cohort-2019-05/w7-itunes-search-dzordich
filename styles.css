@@ -1,0 +1,24 @@
+#resultArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: 10px;
+}
+
+body {
+    margin: 40px
+}
+
+.searcharea {
+    margin: 0 100px;
+}
+
+
+
+#jumbo {
+    height: 280px;
+    width: 370px;
+}
